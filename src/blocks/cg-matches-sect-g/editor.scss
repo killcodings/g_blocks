@@ -1,0 +1,62 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.swiper {
+	width: 100%;
+	max-width: 500px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 300px;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+
+.cg-media-card {
+	.components-button.block-editor-media-placeholder__button.block-editor-media-placeholder__upload-button.is-primary {
+		display: none;
+	}
+}
+
+.wrapper-settings {
+	&__card {
+		padding: 10px;
+		background: rgba(0, 0, 0, 0.04);
+		border-radius: 10px;
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+	}
+	&__count {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 25px;
+		height: 25px;
+		color: #fff;
+		background: #135e96;
+		border-radius: 10px;
+	}
+}
+
+[data-type="cg/cg-matches-sect-g"] {
+	.components-button {
+		background: #3858e9;
+		color: #fff;
+		font-size: 13px;
+		padding: 6px 12px;
+		border-radius: 2px;
+	}
+}

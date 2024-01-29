@@ -1,0 +1,155 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.cg-bookie {
+	padding: 16px 16px 16px 32px;
+	background: grey;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	justify-items: center;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	background: var(--bookie-bg);
+
+	@container cg-bookie-container (max-width: 1200px) {
+		padding: 36px 16px 16px 16px;
+		grid-template-columns: 1fr;
+	}
+
+	&__logo-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 34px;
+		row-gap: 0;
+		position: relative;
+		margin-right: 34px;
+		height: -webkit-fill-available;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background: var(--bookie-card-border-color);
+			min-height: 139px;
+			display: inline-block;
+			right: -34px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@container cg-bookie-container (max-width: 1200px) {
+			margin: 0 0 16px 0;
+			width: 100%;
+			justify-content: space-between;
+			column-gap: 16px;
+			align-items: flex-start;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				min-height: auto;
+				background: var(--bookie-card-border-color);
+				display: inline-block;
+				bottom: -16px;
+				left: 0;
+				right: 0;
+				top: auto;
+			}
+		}
+	}
+	&__bonus-block {
+		position: relative;
+		margin: 0 34px;
+		height: -webkit-fill-available;
+		justify-content: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background: var(--bookie-card-border-color);
+			min-height: 139px;
+			display: inline-block;
+			right: -34px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@container cg-bookie-container (max-width: 1200px) {
+			margin: 16px 0;
+			width: 100%;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				min-height: auto;
+				background: var(--bookie-card-border-color);
+				display: inline-block;
+				bottom: -16px;
+				left: 0;
+				right: 0;
+				top: auto;
+			}
+		}
+	}
+	&__rating-block {
+		position: relative;
+		margin: 0 34px;
+		height: -webkit-fill-available;
+		justify-content: center;
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 1px;
+			height: 100%;
+			background: var(--bookie-card-border-color);
+			height: 100%;
+			min-height: 139px;
+			display: inline-block;
+			right: -34px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		@container cg-bookie-container (max-width: 1200px) {
+			margin: 16px 0;
+			width: 100%;
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 1px;
+				min-height: auto;
+				background: var(--bookie-card-border-color);
+				display: inline-block;
+				bottom: -16px;
+				left: 0;
+				right: 0;
+				top: auto;
+			}
+		}
+	}
+	&__button {
+		padding: 12px 20px;
+		margin-left: 34px;
+
+		@container cg-bookie-container (max-width: 1200px) {
+			margin: 16px 0 0 0;
+			width: 100%;
+			max-width: -webkit-fill-available;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/heroscreen",
+	"version": "0.1.0",
+	"title": "Heroscreen",
+	"category": "design",
+	"description": "Heroscreen block.",
+	"keywords": ["text", "box"],
+	"example": {},
+	"supports": {
+		"html": false,
+		"className": false,
+		"customClassName": false
+	},
+	"textdomain": "heroscreen",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": "cg-heroscreen"
+		},
+		"bageColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"cgTitleColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"bgBage": {
+			"type": "string",
+			"default": "#FFF"
+		},
+		"heroBgV2Card": {
+			"type": "string",
+			"default": "#FFF"
+		},
+		"bageText": {
+			"type": "string"
+		},
+		"texth1" : {
+			"type" : "string"
+		},
+		"isBage" : {
+			"type" : "boolean",
+			"default": false
+		},
+		"isButton" : {
+			"type" : "boolean",
+			"default": true
+		},
+		"selectVersion": {
+			"type": "string"
+		},
+		"selectVersionGlobal": {
+			"type": "string"
+		},
+		"innerBlocksTemplate": {
+			"type": "array",
+			"default": []
+		},
+		"innerBlocksTemplateLock": {
+			"type": "string",
+			"default": "all"
+		},
+		"version": {
+			"type": "string",
+			"default": "45"
+		}
+	}
+}

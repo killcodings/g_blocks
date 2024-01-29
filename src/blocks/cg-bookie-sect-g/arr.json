@@ -1,0 +1,122 @@
+[
+  {
+    "content": "Contentуу",
+    "images": {
+      "type": "array",
+      "source": "query",
+      "selector": "img",
+      "query": {
+        "mediaId": {
+          "type": "number",
+          "default": 0
+        },
+        "urlMedia": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "src",
+          "default": ""
+        },
+        "altAttr": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "alt",
+          "default": ""
+        }
+      }
+    },
+    "linkAttr": {
+      "link": {
+        "type": "string",
+        "default": "/"
+      },
+      "targetLink": {
+        "type": "string",
+        "default": "auto"
+      },
+      "rel": {
+        "type": "string",
+        "default": ""
+      }
+    }
+  },
+  {
+    "content": "Contentкру",
+    "images": {
+      "type": "array",
+      "source": "query",
+      "selector": "img",
+      "query": {
+        "mediaId": {
+          "type": "number",
+          "default": 0
+        },
+        "urlMedia": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "src",
+          "default": ""
+        },
+        "altAttr": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "alt",
+          "default": ""
+        }
+      }
+    },
+    "linkAttr": {
+      "link": {
+        "type": "string",
+        "default": "/"
+      },
+      "targetLink": {
+        "type": "string",
+        "default": "auto"
+      },
+      "rel": {
+        "type": "string",
+        "default": ""
+      }
+    }
+  },
+  {
+    "content": "Content",
+    "images": {
+      "type": "array",
+      "source": "query",
+      "selector": "img",
+      "query": {
+        "mediaId": {
+          "type": "number",
+          "default": 0
+        },
+        "urlMedia": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "src",
+          "default": ""
+        },
+        "altAttr": {
+          "type": "string",
+          "source": "attribute",
+          "attribute": "alt",
+          "default": ""
+        }
+      }
+    },
+    "linkAttr": {
+      "link": {
+        "type": "string",
+        "default": "/"
+      },
+      "targetLink": {
+        "type": "string",
+        "default": "auto"
+      },
+      "rel": {
+        "type": "string",
+        "default": ""
+      }
+    }
+  }
+]

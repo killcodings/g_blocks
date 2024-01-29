@@ -1,0 +1,103 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/custom-button",
+	"version": "0.1.0",
+	"title": "button-wp-block-item",
+	"category": "cg-blocks",
+	"description": "Wp block item button custom",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"align": true
+	},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Hello wp"
+		},
+		"tag": {
+			"type": "string",
+			"default": "button"
+		},
+		"contentColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"contentColorHover": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"backgroundColorHover": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"link": {
+			"type": "string",
+			"default": "/"
+		},
+		"targetLink": {
+			"type": "string",
+			"default": "auto"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "15px",
+				"bottom": "15px",
+				"left": "10px",
+				"right": "10px"
+			}
+		},
+		"radius": {
+			"type": "number",
+			"default": 0
+		},
+		"justifyСontentBtn": {
+			"type": "string",
+			"default": "center"
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"url": {
+			"type": "string"
+		},
+		"alt": {
+			"type": "string"
+		},
+		"mediaId": {
+			"type": "string"
+		},
+		"mediaSize": {
+			"type": "object",
+			"default": {
+				"width": 30,
+				"height": 30,
+				"gap": 10
+			}
+		},
+		"mediaPosition": {
+			"type": "string",
+			"default": "left"
+		},
+		"width": {
+			"type": "number"
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 16
+		}
+	},
+	"textdomain": "wp-block-item-button",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

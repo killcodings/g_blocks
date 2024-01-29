@@ -1,0 +1,79 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/bookie-sect-g",
+	"version": "0.1.0",
+	"title": "bookie-sect-g",
+	"category": "cg-blocks",
+	"description": "Bookie sect g Block.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"innerBlocks": true
+	},
+	"attributes": {
+		"version": {
+			"type": "string",
+			"default": "45"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"innerBlocks4": {
+			"type": "array",
+			"default": []
+		},
+		"selectedPageIds": {
+			"type": "array",
+			"default": []
+		},
+		"pageIds": {
+			"type": "array",
+			"default": []
+		},
+		"linkTitle": {
+			"type": "string",
+			"default": ""
+		},
+		"styleDefault" : {
+			"type": "array",
+			"default": [
+				{
+					"bookieBg": "#F7F7F7",
+					"bageBg": "#D02E4B",
+					"bageColor": "#FFF",
+					"descriptionTextAlign": "center",
+					"descriptionMaxWidth": "754px",
+					"iconOkBg": "#F7A2B133",
+					"iconOkColor": "#D02E4B",
+					"bookieLogoPicBg" : "#171717",
+					"bookieLogoNameColor": "#000",
+					"bookieHighlightsTitleColor": "#000",
+					"bookieHighlightsListColor": "#000",
+					"bookieCardBorderColor": "#EAECF0",
+					"bookieBonusTitleColor": "#000",
+					"bookieBonusNumbBg": "#F6D5DB",
+					"bookieBonusPriceColor": "#000",
+					"bookieBonusInfoColor": "#909090",
+					"bookieRatingNumbColor": "#000",
+					"bookieRatingButnColor": "#475467",
+					"bookieBtnBorderBottom": "#000"
+				}
+			]
+		},
+		"styleOptions" : {
+			"type": "array",
+			"default": []
+		}
+	},
+	"textdomain": "bookie-sect-g",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render/render.php"
+}

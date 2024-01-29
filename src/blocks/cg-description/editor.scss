@@ -1,0 +1,81 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-gutenpride {
+	border: 1px dotted #f00;
+}
+
+.cg-description {
+	padding: 20px;
+	border: 1px solid blue;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: "Description paragraph";
+		top: 27px;
+		left: 0;
+		background: #007cba;
+		color: #fff;
+		padding: 5px;
+		transform: translate(0px, -100%);
+	}
+
+	.block-editor-inner-blocks {
+		border: 1px solid blue;
+		margin-top: 20px;
+
+		p {
+			border: 1px solid #ff6300;
+			margin: 0;
+			padding: 20px;
+
+			&:not(:last-child) {
+				border-bottom: unset;
+			}
+		}
+	}
+
+	&__item {
+		display: grid;
+		width: 100%;
+		align-items: center;
+		padding: 5px;
+		border: 1px solid blue;
+		position: relative;
+
+		display: grid;
+		grid-template-columns: 1fr 40px 40px;
+		position: relative;
+
+		.rich-text {
+			//grid-area: text;
+		}
+
+		.add, .remove {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 40px;
+			width: 40px;
+			background: var(--wp-admin-theme-color, #007cba);
+			border-radius: 5px;
+			color: #fff;
+		}
+
+		.add {
+			//grid-area: add;
+		}
+
+		.remove {
+			//grid-area: remove;
+		}
+
+		&:not(:last-child) {
+			border-bottom: none;
+		}
+	}
+}

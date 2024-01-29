@@ -1,0 +1,28 @@
+
+    {
+      "styleOptions" : {
+        "type": "array",
+        "default": [
+          {
+            "bookieBg": "#F7F7F7",
+            "bageBg": "#D02E4B",
+            "bageColor": "#FFF",
+            "descriptionTextAlign": "center",
+            "descriptionMaxWidth": "754px",
+            "iconOkBg": "#F7A2B133",
+            "iconOkColor": "#D02E4B",
+            "bookieLogoPicBg" : "#171717",
+            "bookieLogoNameColor": "#FDEEF1",
+            "bookieHighlightsTitleColor": "#000",
+            "bookieHighlightsListColor": "#000",
+            "bookieCardBorderColor": "#EAECF0",
+            "bookieBonusTitleColor": "#000",
+            "bookieBonusPriceColor": "#000",
+            "bookieBonusInfoColor": "#909090",
+            "bookieRatingNumbColor": "#000",
+            "bookieRatingButnColor": "#475467",
+            "bookieBtnBorderBottom": "#000"
+          }
+         ]
+      }
+    }

@@ -1,0 +1,58 @@
+/*@use '../base/fonts';
+@use '../base/mixins';
+@use '../base/vars';*/
+/*
+
+.cg-button {
+    font-family: 'Stolzl', sans-serif;
+    @include mixins.cg-button(var(--bg), var(--color), var(--bg-hover));
+    @include fonts.regular;
+    height: fit-content;
+    min-width: min-content;
+
+    &__text {
+        &_arrow {
+            @include mixins.flex-center(8px, 0);
+            z-index: 1;
+
+            &:after {
+                //content: url('../images/content/arrow-up-right.svg');
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                bottom: 1px;
+            }
+        }
+
+        &_arrow-black {
+            @include mixins.flex-center(8px, 0);
+            z-index: 1;
+
+            &:after {
+                //content: url('../images/content/cg-arrow-black.svg');
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                bottom: 1px;
+            }
+        }
+
+        &_arrow-red {
+            @include mixins.flex-center(8px, 0);
+            z-index: 1;
+
+            &:after {
+                //content: url('../images/content/cg-arrow-red.svg');
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                position: relative;
+                bottom: 1px;
+            }
+        }
+    }
+
+}
+*/

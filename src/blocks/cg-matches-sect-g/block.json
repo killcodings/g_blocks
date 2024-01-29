@@ -1,0 +1,135 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/cg-matches-sect-g",
+	"version": "0.1.0",
+	"title": "matches-sect-g",
+	"category": "cg-blocks",
+	"description": "Matches sect g",
+	"example": {},
+	"supports": {
+		"html": false,
+		"innerBlocks": true
+	},
+	"attributes": {
+		"version": {
+			"type": "string",
+			"default": "45"
+		},
+		"title": {
+			"type": "string",
+			"default": ""
+		},
+		"description": {
+			"type": "string",
+			"default": ""
+		},
+		"innerBlocks4": {
+			"type": "array",
+			"default": []
+		},
+
+		"blocks": {
+			"type": "array",
+			"default": [
+				{
+					"enableSwiper": false,
+					"swiperSlideAtr": [
+						{
+							"mediaId": 0,
+							"urlMedia": "https://swiperjs.com/demos/images/nature-5.jpg",
+							"altAttr": ""
+						}
+					],
+					"sectMediaImg" : {
+						"mediaId": 0,
+						"urlMedia": "https://swiperjs.com/demos/images/nature-6.jpg",
+						"altAttr": ""
+					},
+					"sectMediaLogoImg" : {
+						"mediaId": 0,
+						"urlMedia": "https://swiperjs.com/demos/images/nature-7.jpg",
+						"altAttr": ""
+					},
+					"mediaCardText": "Content",
+					"linkAttr" : {
+						"link": {
+							"type": "string",
+							"default": "/"
+						},
+						"targetLink": {
+							"type": "string",
+							"default": "auto"
+						},
+						"rel": {
+							"type": "string",
+							"default": ""
+						}
+					}
+				}
+			]
+		},
+		"buttonsArr": {
+			"type": "array",
+			"default": [
+				{
+					"content": "Content",
+					"images": {
+						"type": "array",
+						"source": "query",
+						"selector": "img",
+						"query": {
+							"mediaId": {
+								"type": "number",
+								"default": 0
+							},
+							"urlMedia": {
+								"type": "string",
+								"source": "attribute",
+								"attribute": "src",
+								"default": ""
+							},
+							"altAttr": {
+								"type": "string",
+								"source": "attribute",
+								"attribute": "alt",
+								"default": ""
+							}
+						}
+					},
+					"linkAttr" : {
+						"link": {
+							"type": "string",
+							"default": "/"
+						},
+						"targetLink": {
+							"type": "string",
+							"default": "auto"
+						},
+						"rel": {
+							"type": "string",
+							"default": ""
+						}
+					}
+				}
+			]
+		},
+
+
+		"selectedPageIds": {
+			"type": "array",
+			"default": []
+		},
+		"pageIds": {
+			"type": "array",
+			"default": []
+		}
+	},
+	"assets": {
+		"image": "./nature-5.jpg"
+	},
+	"textdomain": "matches-sect-g",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"render": "file:./render/render.php"
+}

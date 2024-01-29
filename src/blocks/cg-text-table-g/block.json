@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/text-table-g",
+	"version": "0.1.0",
+	"title": "text-table-g",
+	"category": "cg-components",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"innerBlocks": true
+	},
+	"attributes": {
+		"recordId": {
+			"type": "number"
+		},
+		"version": {
+			"type": "string",
+			"default": "45"
+		},
+		"innerBlocksTable": {
+			"type": "array",
+			"default": []
+		},
+		"isTable" : {
+			"type" : "boolean",
+			"default": true
+		}
+	},
+	"providesContext": {
+		"cg/recordId": "recordId"
+	},
+	"textdomain": "text-table-g",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render/render.php"
+}

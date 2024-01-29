@@ -1,0 +1,30 @@
+/*
+@use '../base/vars';
+@use '../base/fonts';
+
+.cg-bage {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+    p {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        margin: 0;
+        color: vars.$black;
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        @include fonts.medium;
+        padding: 2px 6px 2px 8px;
+        background: vars.$white;
+
+        &::after {
+            content: url(../../blocks/cg-heroscreen/cg-bage-icon.svg);
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+        }
+    }
+}
+*/

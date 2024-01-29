@@ -1,0 +1,71 @@
+/*
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin semibold {
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin cg-text ($font-size, $line-height, $color, $letter-spacing) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    letter-spacing: $letter-spacing;
+    text-align: center;
+}
+
+@mixin inter-text ($color, $font-weight, $text-align) {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: $font-weight;
+    line-height: 24px;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin stolzl-title ($color, $font-weight) {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 25px;
+    font-weight: $font-weight;
+    line-height: 38px;
+    color: $color;
+    text-align: center;
+}
+
+@mixin title-medium ($color) {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 32px;
+    @include medium;
+    line-height: 38px;
+    color: $color;
+    text-align: center;
+
+    @media (max-width: 450px) {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@mixin title-h1 ($color) {
+    font-family: 'Stolzl', sans-serif;
+    font-size: 40px;
+    @include medium;
+    line-height: 120%;
+    color: $color;
+    text-align: center;
+    letter-spacing: -0.8px;
+
+    @media (max-width: 450px) {
+        font-size: 32px;
+        letter-spacing: -0.64px;
+    }
+}*/

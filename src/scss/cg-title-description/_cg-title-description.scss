@@ -1,0 +1,13 @@
+/*
+@use '../base/fonts';
+@use '../base/mixins';
+
+.cg-title-description {
+    @include mixins.flex-column-center(0, 20px);
+    align-items: flex-start;
+
+    p {
+        @include fonts.inter-text (var(--color), 400, var(--text-align));
+        margin: 0;
+    }
+}*/

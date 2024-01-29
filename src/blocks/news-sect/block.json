@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/newstest",
+	"version": "0.1.0",
+	"title": "News Section Test",
+	"category": "design",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"version": {
+			"type": "string",
+			"default": "44"
+		}
+	},
+	"textdomain": "newstest",
+	"editorScript": "file:./index.js"
+}

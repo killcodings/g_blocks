@@ -1,0 +1,31 @@
+.is-root-container {
+	.cg-heroscreen {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		column-gap: 0;
+		row-gap: 20px;
+		padding: 125px 32px;
+		background: rgba(102, 58, 84, 0.32);
+		min-height: 500px;
+
+		&-v2 {
+			background: rgba(104, 58, 235, 0.25);
+		}
+	}
+
+	.cg-bage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 1;
+		min-width: 50%;
+		height: 40px;
+		background: #ff000063;
+		padding: 0 20px;
+
+		&_active {
+			background: linear-gradient(to right, rgb(23 255 0), rgb(75 255 33));
+		}
+	}
+}

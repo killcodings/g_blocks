@@ -1,0 +1,98 @@
+
+.cg-block-buttons-gutenberg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &--center {
+    justify-content: center;
+  }
+  &--flex-start {
+    justify-content: flex-start;
+  }
+  &--flex-end {
+    justify-content: flex-end;
+  }
+
+  .cg-button-gutenberg {
+    display: flex;
+    align-items: center;
+    padding: 12px 48px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    position: relative;
+    font-family: "Stolzl", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: normal;
+    background-color: var(--customBtn-background-color, #000);
+    color: var(--customBtn-color, #fff);
+
+    &:hover {
+      background-color: var(--customBtn-background-color-hover, #000);
+      color: var(--customBtn-color-hover, #fff);
+    }
+
+    &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+
+      &--media-left {
+        flex-direction: row;
+      }
+      &--media-right {
+        flex-direction: row-reverse;
+      }
+      &--media-right {
+        flex-direction: row-reverse;
+      }
+      &--media-top {
+        flex-direction: column;
+      }
+      &--media-bottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+}
+
+.button_inner {
+}
+
+.button_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
+}
+
+.button_icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+
+  img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
+  }
+}
+
+.wp-block-cg-cg-block-buttons-gutenberg.cg-block-buttons-gutenberg.cg-block-buttons-gutenberg--center * {
+  margin-bottom: 0 !important;
+}

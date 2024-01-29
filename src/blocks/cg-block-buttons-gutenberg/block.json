@@ -1,0 +1,126 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/cg-block-buttons-gutenberg",
+	"version": "0.1.0",
+	"title": "Cg-block-buttons-gutenberg",
+	"category": "cg-blocks",
+	"description": "block buttons gutenberg",
+	"example": {},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"attributes": {
+		"tag": {
+			"type": "string",
+			"default": "a"
+		},
+
+		"contentColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"contentColorHover": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"backgroundColorHover": {
+			"type": "string",
+			"default": "#000000"
+		},
+
+
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "12px",
+				"bottom": "12px",
+				"left": "48px",
+				"right": "48px"
+			}
+		},
+		"radius": {
+			"type": "number",
+			"default": 0
+		},
+		"justifyСontentBtn": {
+			"type": "string",
+			"default": "center"
+		},
+		"mediaSize": {
+			"type": "object",
+			"default": {
+				"width": 30,
+				"height": 30,
+				"gap": 10
+			}
+		},
+		"mediaPosition": {
+			"type": "string",
+			"default": "left"
+		},
+		"width": {
+			"type": "string"
+		},
+		"fontSize": {
+			"type": "number",
+			"default": 16
+		},
+		"buttonsArr": {
+			"type": "array",
+			"default": [
+				{
+					"content": "Content",
+					"images": {
+						"type": "array",
+						"source": "query",
+						"selector": "img",
+						"query": {
+							"mediaId": {
+								"type": "number",
+								"default": 0
+							},
+							"urlMedia": {
+								"type": "string",
+								"source": "attribute",
+								"attribute": "src",
+								"default": ""
+							},
+							"altAttr": {
+								"type": "string",
+								"source": "attribute",
+								"attribute": "alt",
+								"default": ""
+							}
+						}
+					},
+					"linkAttr" : {
+						"link": {
+							"type": "string",
+							"default": "/"
+						},
+						"targetLink": {
+							"type": "string",
+							"default": "auto"
+						},
+						"rel": {
+							"type": "string",
+							"default": ""
+						}
+					}
+				}
+			]
+		}
+	},
+	"usesContext": [ "cg/recordId" ],
+	"textdomain": "cg-buttons",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}

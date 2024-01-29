@@ -1,0 +1,49 @@
+//@use './../../scss/base/fonts';
+//@use './../../scss/base/vars';
+//@use './../../scss/base/_mixins';
+/*
+.cg-heroscreen {
+	//background-image: url('../images/content/cg-bg.png');
+	background-size: cover;
+	background-blend-mode: multiply;
+	padding: 125px 32px;
+	@include mixins.flex-column-center(0, 20px);
+	container-type: inline-size;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background: linear-gradient(0deg, rgba(103, 23, 38, 0.70) 0%, rgba(103, 23, 38, 0.70) 100%);
+	}
+
+	@media (max-width: 450px) {
+		padding: 70px 32px;
+	}
+
+	&__title {
+		max-width: 726px;
+		z-index: 1;
+	}
+
+	&__text {
+		max-width: 666px;
+		z-index: 1;
+	}
+
+	&__buttons {
+		display: flex;
+		column-gap: 20px;
+		z-index: 1;
+
+		@container (max-width: 370px) {
+			width: 100%;
+			flex-direction: column;
+			row-gap: 20px;
+		}
+	}
+}
+*/

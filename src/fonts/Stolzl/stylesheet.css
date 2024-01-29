@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Regular'), local('Stolzl-Regular'),
+        url('../Stolzl/Stolzl-Regular.woff2') format('woff2'),
+        url('../Stolzl/Stolzl-Regular.woff') format('woff'),
+        url('../Stolzl/Stolzl-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Bold'), local('Stolzl-Bold'),
+        url('../Stolzl/Stolzl-Bold.woff2') format('woff2'),
+        url('../Stolzl/Stolzl-Bold.woff') format('woff'),
+        url('../Stolzl/Stolzl-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Bold'), local('Stolzl-Bold'),
+        url('../Stolzl/Stolzl-Bold.woff2') format('woff2'),
+        url('../Stolzl/Stolzl-Bold.woff') format('woff'),
+        url('../Stolzl/Stolzl-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stolzl';
+    src: local('Stolzl Medium'), local('Stolzl-Medium'),
+        url('../Stolzl/Stolzl-Medium.woff2') format('woff2'),
+        url('../Stolzl/Stolzl-Medium.woff') format('woff'),
+        url('../Stolzl/Stolzl-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

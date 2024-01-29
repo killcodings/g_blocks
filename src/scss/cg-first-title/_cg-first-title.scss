@@ -1,0 +1,7 @@
+/*
+@use '../base/fonts';
+
+.cg-first-title {
+    @include fonts.title-h1 (var(--color));
+    margin: 0;
+}*/

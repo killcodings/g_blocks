@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/cg-description",
+	"version": "0.1.0",
+	"title": "Description paragraph",
+	"category": "cg-blocks",
+	"icon": "editor-paragraph",
+	"description": "Description paragraph max-width",
+	"example": {},
+	"supports": {
+	},
+	"textdomain": "paragraph-max-width",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+		"сolorText": {
+			"type": "string",
+			"default": "#000000"
+		},
+		"maxWidth": {
+			"type": "string",
+			"default": 754
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "left"
+		},
+		"isEnabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"paragraphs": {
+			"type": "array",
+			"default": [{ "content": "" }]
+		}
+	}
+}

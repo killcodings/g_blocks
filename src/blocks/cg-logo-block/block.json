@@ -1,0 +1,80 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cg/cg-logo-block",
+	"version": "0.1.0",
+	"title": "Logo block",
+	"category": "cg-blocks",
+	"icon": "block-default",
+	"description": "Logo text component.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"className": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"className": {
+			"type": "string",
+			"default": "cg-logo-block"
+		},
+		"title": {
+			"type": "string"
+		},
+		"description": {
+			"type": "string"
+		},
+		"style": {
+			"type": "object",
+			"default": {
+				"--widthLogo": "103px",
+				"--heightLogo": "103px",
+				"--bgLogo": "#00000014"
+			}
+		},
+		"mediaSize": {
+			"type": "object",
+			"default": {
+				"width": 30,
+				"height": 30
+			}
+		},
+
+		"images": {
+			"type": "array",
+			"source": "query",
+			"selector": "img",
+			"query": {
+				"urlMedia": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "src"
+				},
+				"altAttr": {
+					"type": "string",
+					"source": "attribute",
+					"attribute": "alt"
+				},
+				"mediaId": {
+					"type": "number"
+				}
+			}
+		}
+	},
+	"styles": [
+		{
+			"name": "custom-style",
+			"label": "Custom Style",
+			"isDefault": false,
+			"properties": {
+				"color": "red",
+				"font-size": "16px"
+			}
+		}
+	],
+	"textdomain": "logo-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
